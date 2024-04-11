@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup</title>
+<link rel="stylesheet" href="first.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="box">
+    <header class="signup-header">
+      <h1>Signup</h1>
+    </header>
+    <main class="signup-body">
+      <form id="signupForm">
+        <p>
+          <label for="name">Full Name</label>
+          <input type="text" placeholder="Type Name Here" id="name" required>
+          <span id="nameError"></span>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" placeholder="someone@gmail.com" id="email" required>
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" placeholder="at least 8 characters" id="password" required minlength="8" maxlength="30">
+        </p>
+        <p>
+          <input type="submit" value="Create Account" id="submitBtn">
+        </p>
+      </form>
+    </main>
+    <footer class="signup-footer">
+      <p>Already have an account? <a href="">Login</a></p>
+    </footer>
+  </div>
+</div>
+
+<script src="first.js"></script>
+</body>
+</html>
